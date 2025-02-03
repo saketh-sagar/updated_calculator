@@ -1,0 +1,166 @@
+form .calci input {
+    background: transparent;
+    border:none;
+    width: 93% !important;
+    margin: 10px !important;
+   text-align: right;
+    font-size: 20px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+form .operator{
+ color:#33ffd8 !important
+}
+form .equalto{
+    width:125px !important
+}
+
+.class{
+    margin-bottom: 3%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.div{
+    border: 2px solid black;
+    width: fit-content;
+    background-color: #3a4452;
+    border-radius: 10px;
+}
+.contianer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(150 189 189)
+    /* background-image: url("./calci.jpg"); */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.div form input{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    color: white;
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+}
+.contianer h5{
+    max-width: fit-content;
+    margin: auto;
+}
+.contianer button{
+    position: relative;
+    left:35%;
+    top:10%;
+    border-radius: 10px;
+    width: 90px;
+}
+
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 20%;
+    height: 35%;
+    background: #b1aaaa;
+}
+
+.popupp {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 20%;
+    height: 37%;
+    background: #b1aaaa;
+}
+
+form button{
+    border-radius: 10px;
+    color: black;
+    width: 70px;;
+}
+.submit{
+    border-radius: 10px;
+    color: black;
+    width: 70px;;
+}
+.popupp form input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+@media only screen and (max-width:600px){
+.contianer h1{
+    margin-left: 84px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.contianer h5{
+    margin-left: 54px;
+}
+
+.contianer button{
+    left: 90px;
+}
+
+.popupp{
+    width: 68%;
+    height: 40%;
+}
+
+.popup{
+    width: 68%;
+    height: 47%;
+}
+
+
+
+
+
+
+}
