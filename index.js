@@ -9,7 +9,7 @@ const bodyparser = require('body-parser');
 const data = require('./Models/Collection')
 const Schema = require('./Models/History')
 const axios = require('axios');
-const port = process.env.port || 4000;
+const port = process.env.port || 5000;
 const app = express();
 let apiData = {};
 app.use(express.urlencoded({extended:true}));
@@ -20,11 +20,6 @@ let userName='';
 let cals = ['value1 + value2 = result'];
 dotenv.config();
 mongoose.connect(process.env.Mongo_Uri,{
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
-    // poolSize: 10,  // Configure the connection pool size
-    // serverSelectionTimeoutMS: 5000,  // Timeout for selecting a server
-    // socketTimeoutMS: 45000 
 })
 .then(()=>{
     console.log('succesfully connected to Database');
